@@ -1,0 +1,14 @@
+/* Import essential HEART styles
+-------------------------------------------------------------- */
+@use "@gfm-heart/tokens" as hrt;
+@use "@gfm-heart/styles/utils" as hrt-utils;
+@use "@gfm-heart/styles";
+
+@use "@design/system/dist/lib/callouts";
+@use "@design/system/dist/lib/icons";
+
+/* Global styles
+-------------------------------------------------------------- */
+h1 {
+	
+}
