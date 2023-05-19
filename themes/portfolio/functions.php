@@ -1,7 +1,7 @@
 <?php
 
 // All partials are located in the lib file.
-// Please try and keep code aside from partial imports off of this page.
+// Please try and keep all code aside from partial imports out of this functions file.
 
 /* Enqueued styles and scripts
 -------------------------------------------------------------- */

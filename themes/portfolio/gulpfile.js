@@ -71,6 +71,6 @@ gulp.task('imgOpt', function() {
 gulp.task('watch', gulp.series('adminSass', 'sass', 'scripts', 'imgOpt', function() {
 	gulp.watch('admin/**/*.scss', gulp.series('adminSass'));
 	gulp.watch('styles/**/*.scss', gulp.series('sass'));
-	gulp.watch('scripts/**/*.js', gulp.series('scripts'));
+	gulp.watch(['scripts/**/*.js', '!scripts/dist.js'], gulp.series('scripts'));
 	gulp.watch('assets/images/*', gulp.series('imgOpt'));
 }));
