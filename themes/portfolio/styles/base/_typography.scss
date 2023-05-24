@@ -1,0 +1,23 @@
+// Import variables
+@use 'utilities/variables' as *;
+
+/* Typography styles
+-------------------------------------------------------------- */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'liga';
+  text-rendering: optimizeLegibility;
+
+  font-size: $base-size;
+  line-height: $base-line-height;
+  color: $dark;
+  font-family: $primary;
+
+  h1 {
+    font-family: $secondary;
+    font-size: rem-calc(30);
+    color: $dark;
+    font-weight: $base-weight;
+  }
+}
