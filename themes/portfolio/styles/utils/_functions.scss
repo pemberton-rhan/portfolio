@@ -1,4 +1,0 @@
-// Create a rem-calc function based off of 16px
-@function rem-calc($value) {
-  @return ($value / 16) * 1rem;
-}

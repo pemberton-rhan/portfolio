@@ -1,0 +1,11 @@
+// Import variables
+@use 'utilities/variables' as *;
+@use 'utilities/functions' as *;
+
+/* Styles
+-------------------------------------------------------------- */
+.container-outer {
+  max-width: rem-calc(1100);
+  padding: 0 rem-calc(50);
+  margin: 0 auto;
+}

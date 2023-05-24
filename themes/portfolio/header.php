@@ -17,6 +17,8 @@
 
 <body <?php body_class(); ?>>
   
-  <header class="header">
-    
+  <header>
+    <div class="container-outer">
+      <h1>Rhan Pemberton</h1>
+    </div>
   </header>

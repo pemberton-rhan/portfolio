@@ -1,9 +1,0 @@
-/* Import required sass modules
--------------------------------------------------------------- */
-@use '../utils/variables/colors' as color;
-
-/* Styles
--------------------------------------------------------------- */
-html {
-  background-color: color.$background-lite;
-}

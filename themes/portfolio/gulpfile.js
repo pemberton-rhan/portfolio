@@ -30,25 +30,25 @@ gulp.task('adminSass', function () {
 -------------------------------------------------------------- */
 gulp.task('sass', function () {
 	return gulp
-	.src('styles/compile.scss')
+	.src('styles/main.scss')
 	 .pipe(sourcemaps.init())
 	 .pipe(concat('dist.css'))
 	 .pipe(sass({ includePaths: ['./node_modules'] }).on('error', sass.logError))
 	 .pipe(postcss([autoprefixer()]))
 	 .pipe(cleanCSS())
 	 .pipe(sourcemaps.write(''))
-	 .pipe(gulp.dest('styles'));
+	 .pipe(gulp.dest('dist'));
 });
 
 /* Theme .js
 -------------------------------------------------------------- */
 gulp.task('scripts', function() {
 	return gulp
-		.src('scripts/compile.js')
+		.src('scripts/main.js')
 		.pipe(concat('dist.js'))
 		.pipe(include())
 		.pipe(uglify())
-		.pipe(gulp.dest('scripts/'));
+		.pipe(gulp.dest('dist'));
 });
 
 /* Media
@@ -71,6 +71,6 @@ gulp.task('imgOpt', function() {
 gulp.task('watch', gulp.series('adminSass', 'sass', 'scripts', 'imgOpt', function() {
 	gulp.watch('admin/**/*.scss', gulp.series('adminSass'));
 	gulp.watch('styles/**/*.scss', gulp.series('sass'));
-	gulp.watch(['scripts/**/*.js', '!scripts/dist.js'], gulp.series('scripts'));
+	gulp.watch('scripts/**/*.js', gulp.series('scripts'));
 	gulp.watch('assets/images/*', gulp.series('imgOpt'));
 }));
