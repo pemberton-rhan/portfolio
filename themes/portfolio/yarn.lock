@@ -2957,6 +2957,22 @@ gulp-decompress@^1.2.0:
     gulp-util "^3.0.1"
     readable-stream "^2.0.2"
 
+gulp-flatmap@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gulp-flatmap/-/gulp-flatmap-1.0.2.tgz#b515ae6081d66af99daf56c612e2d92502720133"
+  integrity sha512-xm+Ax2vPL/xiMBqLFI++wUyPtncm3b55ztGHewmRcoG/sYb0OUTatjSacOud3fee77rnk+jOgnDEHhwBtMHgFA==
+  dependencies:
+    plugin-error "0.1.2"
+    through2 "2.0.3"
+
+gulp-flatten@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/gulp-flatten/-/gulp-flatten-0.4.0.tgz#d9ac819416c30fd5dfb3dea9da79c83a1bcd61d1"
+  integrity sha512-eg4spVTAiv1xXmugyaCxWne1oPtNG0UHEtABx5W8ScLiqAYceyYm6GYA36x0Qh8KOIXmAZV97L2aYGnKREG3Sg==
+  dependencies:
+    plugin-error "^0.1.2"
+    through2 "^2.0.0"
+
 gulp-gm@~0.0.9:
   version "0.0.9"
   resolved "https://registry.yarnpkg.com/gulp-gm/-/gulp-gm-0.0.9.tgz#dbd74a812eca5ba28c0b74e8d2f729bde9844978"
@@ -3022,6 +3038,11 @@ gulp-rename@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.4.0.tgz#de1c718e7c4095ae861f7296ef4f3248648240bd"
   integrity sha512-swzbIGb/arEoFK89tPY58vg3Ok1bw+d35PfUNwWqdo7KM4jkmuGA78JiDNqR+JeZFaeeHnRg9N7aihX3YPmsyg==
+
+gulp-rename@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-2.0.0.tgz#9bbc3962b0c0f52fc67cd5eaff6c223ec5b9cf6c"
+  integrity sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
 
 gulp-sass@^5.1.0:
   version "5.1.0"
@@ -3339,6 +3360,15 @@ imagemin-jpegtran@^5.0.2:
     exec-buffer "^3.0.0"
     is-jpg "^1.0.0"
     jpegtran-bin "^3.0.0"
+
+imagemin-jpegtran@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/imagemin-jpegtran/-/imagemin-jpegtran-7.0.0.tgz#7728f84876362d489b9a1656e0cc8e2009406e6f"
+  integrity sha512-MJoyTCW8YjMJf56NorFE41SR/WkaGA3IYk4JgvMlRwguJEEd3PnP9UxA8Y2UWjquz8d+On3Ds/03ZfiiLS8xTQ==
+  dependencies:
+    exec-buffer "^3.0.0"
+    is-jpg "^2.0.0"
+    jpegtran-bin "^5.0.0"
 
 imagemin-optipng@^5.2.1:
   version "5.2.1"
@@ -3682,6 +3712,11 @@ is-jpg@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-jpg/-/is-jpg-1.0.1.tgz#296d57fdd99ce010434a7283e346ab9a1035e975"
   integrity sha512-X5PVpLMBH/OaeTN8quzbcLTlwXCb/6n3tcfYTtEDzp0ZwAlgAOtIAIBHN4mS5OcscMgO8etZ5Ol1mNrXSqwBVQ==
 
+is-jpg@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/is-jpg/-/is-jpg-2.0.0.tgz#2e1997fa6e9166eaac0242daae443403e4ef1d97"
+  integrity sha512-ODlO0ruzhkzD3sdynIainVP5eoOFNN85rxA1+cwwnPe4dKyX0r5+hxNO5XpCrxlHcmb9vkOit9mhRD2JVuimHg==
+
 is-lambda@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-lambda/-/is-lambda-1.0.1.tgz#3d9877899e6a53efc0160504cde15f82e6f061d5"
@@ -3955,6 +3990,15 @@ jpegtran-bin@^3.0.0:
   dependencies:
     bin-build "^2.0.0"
     bin-wrapper "^3.0.0"
+    logalot "^2.0.0"
+
+jpegtran-bin@^5.0.0:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/jpegtran-bin/-/jpegtran-bin-5.0.2.tgz#5870fd7e68317bd203a1c94572bd06ae7732cac3"
+  integrity sha512-4FSmgIcr8d5+V6T1+dHbPZjaFH0ogVyP4UVsE+zri7S9YLO4qAT2our4IN3sW3STVgNTbqPermdIgt2XuAJ4EA==
+  dependencies:
+    bin-build "^3.0.0"
+    bin-wrapper "^4.0.0"
     logalot "^2.0.0"
 
 jpegtran-bin@^7.0.0:
@@ -5327,17 +5371,7 @@ pinkie@^2.0.0:
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha512-MnUuEycAemtSaeFSjXKW/aroV7akBbY+Sv+RkyqFjgAe73F+MR0TBWKBRDkmfWq/HiFmdavfZ1G7h4SPZXaCSg==
 
-plugin-error@1.0.1, plugin-error@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
-  integrity sha512-L1zP0dk7vGweZME2i+EeakvUNqSrdiI3F91TwEoYiGrAfUXmVv6fJIq4g82PAXxNsWOp0J7ZqQy/3Szz0ajTxA==
-  dependencies:
-    ansi-colors "^1.0.1"
-    arr-diff "^4.0.0"
-    arr-union "^3.1.0"
-    extend-shallow "^3.0.2"
-
-plugin-error@^0.1.2:
+plugin-error@0.1.2, plugin-error@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-0.1.2.tgz#3b9bb3335ccf00f425e07437e19276967da47ace"
   integrity sha512-WzZHcm4+GO34sjFMxQMqZbsz3xiNEgonCskQ9v+IroMmYgk/tas8dG+Hr2D6IbRPybZ12oWpzE/w3cGJ6FJzOw==
@@ -5347,6 +5381,16 @@ plugin-error@^0.1.2:
     arr-diff "^1.0.1"
     arr-union "^2.0.1"
     extend-shallow "^1.1.2"
+
+plugin-error@1.0.1, plugin-error@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-1.0.1.tgz#77016bd8919d0ac377fdcdd0322328953ca5781c"
+  integrity sha512-L1zP0dk7vGweZME2i+EeakvUNqSrdiI3F91TwEoYiGrAfUXmVv6fJIq4g82PAXxNsWOp0J7ZqQy/3Szz0ajTxA==
+  dependencies:
+    ansi-colors "^1.0.1"
+    arr-diff "^4.0.0"
+    arr-union "^3.1.0"
+    extend-shallow "^3.0.2"
 
 plur@^2.1.2:
   version "2.1.2"
@@ -6745,6 +6789,14 @@ through2-filter@^3.0.0:
   dependencies:
     through2 "~2.0.0"
     xtend "~4.0.0"
+
+through2@2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.3.tgz#0004569b37c7c74ba39c43f3ced78d1ad94140be"
+  integrity sha512-tmNYYHFqXmaKSSlOU4ZbQ82cxmFQa5LRWKFtWCNkGIiZ3/VHmOffCeWfBRZZRyXAhNP9itVMR+cuvomBOPlm8g==
+  dependencies:
+    readable-stream "^2.1.5"
+    xtend "~4.0.1"
 
 through2@3.0.1:
   version "3.0.1"

@@ -1,12 +1,10 @@
 <?php
 
 // Load block reg files here
-add_action( 'acf/init', 'my_acf_init_block_types' );
-function my_acf_init_block_types() {
-	
-	if ( function_exists( 'acf_register_block_type' ) ) {
-		include_once( get_template_directory() . '/lib/acf/block-reg/heroes.php' );
-	}
+add_action( 'init', 'register_acf_blocks', 5 );
+function register_acf_blocks() {
+		// Register each block here
+		register_block_type( __DIR__ . '../../blocks/heroes/primary' );
 }
 
 // List of allowed blocks

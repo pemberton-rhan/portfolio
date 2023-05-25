@@ -1,0 +1,1 @@
+{"version":3,"sources":["heroes/primary/styles/heroes-primary.scss"],"names":[],"mappings":"AAAA,GACE,MAAA","file":"heroes-primary.css","sourcesContent":["h1 {\n  color: red;\n}\n"]}
