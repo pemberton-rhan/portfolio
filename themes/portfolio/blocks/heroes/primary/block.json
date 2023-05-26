@@ -1,13 +1,16 @@
 {
-  "name": "acf/hero-primary",
-  "title": "Hero Primary",
-  "description": "Primary hero block. Block includes eyebrow and large callout.",
-  "style": ["file:./block.css"],
+  "name": "hero-primary",
+  "title": "Hero - Primary",
+  "description": "Primary hero section. Supports eyebrow and callout.",
+  "style": "blocks/heroes/primary/styles/block.css",
   "category": "heroes",
+  "apiVersion": 2,
   "icon": "cover-image",
-  "keywords": ["heroes", "hero", "primary"],
   "acf": {
     "mode": "edit",
-    "renderTemplate": "block.php"
+    "renderTemplate": "blocks/heroes/primary/block.php"
+  },
+  "supports": {
+    "anchor": true
   }
 }
