@@ -7,3 +7,7 @@ add_theme_support( 'post-thumbnails' );
 	
 /* Remove theme support
 -------------------------------------------------------------- */
+// Disables all core patterns.
+add_action('init', function() {
+	remove_theme_support('core-block-patterns');
+});

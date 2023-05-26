@@ -1,0 +1,16 @@
+{
+  "name": "hero-primary",
+  "title": "Hero - Primary",
+  "description": "Primary hero section. Supports eyebrow and callout.",
+  "style": "blocks/heroes/primary/styles/block.css",
+  "category": "heroes",
+  "apiVersion": 2,
+  "icon": "cover-image",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "blocks/heroes/primary/block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

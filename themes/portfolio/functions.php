@@ -15,6 +15,7 @@ require_once( get_template_directory() . '/lib/functions/theme-options.php' );
 
 /* ACF
 -------------------------------------------------------------- */
-require_once( get_template_directory() . '/lib/acf/admin-styles.php' );
-require_once( get_template_directory() . '/lib/acf/block-types.php' );
 require_once( get_template_directory() . '/lib/acf/block-categories.php' );
+require_once( get_template_directory() . '/lib/acf/block-types.php' );
+require_once( get_template_directory() . '/lib/acf/block-allowed.php' );
+require_once( get_template_directory() . '/lib/acf/admin-styles.php' );
