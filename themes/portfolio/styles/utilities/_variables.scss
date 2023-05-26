@@ -3,8 +3,7 @@
 $base-size: 16px;
 $base-line-height: 1.5;
 $base-weight: 400;
-$primary: 'Lora', serif;
-$secondary: 'Oxygen', sans-serif;
+$font-primary: system-ui, sans-serif;
 
 /* Colors
 -------------------------------------------------------------- */
@@ -12,5 +11,5 @@ $secondary: 'Oxygen', sans-serif;
 $background-lite: #edece5;
 
 // Font colors
-$dark: #272527;
-$alt: #df836a;
+$color-dark: #222222;
+$color-alt: #df836a;

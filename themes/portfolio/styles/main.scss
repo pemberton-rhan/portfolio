@@ -1,16 +1,15 @@
 // Base
 @use 'base/reset';
-@use 'base/fonts';
 @use 'base/typography';
 
 // Components
-@use 'components/buttons';
+//@use 'components/buttons';
 
 // Layout
 @use 'layout/structure';
 
 // Templates
-@use 'templates/header';
+//@use 'templates/header';
 
 // Media
 @use 'media/breakpoints';

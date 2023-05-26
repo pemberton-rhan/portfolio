@@ -1,5 +1,6 @@
-// Import variables
+// Import needed sass modules
 @use 'utilities/variables' as *;
+@use 'utilities/functions' as *;
 
 /* Typography styles
 -------------------------------------------------------------- */
@@ -11,13 +12,23 @@ body {
 
   font-size: $base-size;
   line-height: $base-line-height;
-  color: $dark;
-  font-family: $primary;
+  color: $color-dark;
+  font-family: $font-primary;
 
   h1 {
-    font-family: $secondary;
-    font-size: rem-calc(30);
-    color: $dark;
-    font-weight: $base-weight;
+    font-size: rem-calc(75);
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: rem-calc(-1.8);
+  }
+  h2,
+  h3 {
+    font-size: rem-calc(20);
+    font-weight: 700;
+    letter-spacing: rem-calc(-0.2);
+    margin-bottom: rem-calc(15);
+  }
+  p {
+    margin-bottom: rem-calc(15);
   }
 }

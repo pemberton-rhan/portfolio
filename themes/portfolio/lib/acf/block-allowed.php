@@ -13,6 +13,7 @@ function restrict_blocks($allowed_block_types, $post) {
     
     // Custom blocks
     'acf/hero-primary',
+    'acf/content-about',
   );
 
   return $allowed_block_types;
