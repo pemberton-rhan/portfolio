@@ -1,0 +1,16 @@
+{
+  "name": "content-misc",
+  "title": "Content - Misc",
+  "description": "Misc section",
+  "style": "file:./styles/block.css",
+  "category": "content",
+  "apiVersion": 2,
+  "icon": "welcome-write-blog",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "blocks/content/misc/block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

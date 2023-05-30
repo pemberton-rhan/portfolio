@@ -15,6 +15,7 @@ function restrict_blocks($allowed_block_types, $post) {
     'acf/hero-primary',
     'acf/content-about',
     'acf/content-skills',
+    'acf/content-misc',
   );
 
   return $allowed_block_types;
