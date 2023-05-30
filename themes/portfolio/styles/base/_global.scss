@@ -1,0 +1,6 @@
+// Import variables
+@use 'utilities/variables' as *;
+
+html {
+  background-color: $background-lite;
+}
