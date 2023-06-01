@@ -8,10 +8,11 @@
 require_once( get_template_directory() . '/lib/enqueued/enqueue-styles.php' );
 require_once( get_template_directory() . '/lib/enqueued/enqueue-scripts.php' );
 
-/* Theme support & options
+/* Theme support, options, and functions
 -------------------------------------------------------------- */
 require_once( get_template_directory() . '/lib/functions/theme-support.php' );
 require_once( get_template_directory() . '/lib/functions/theme-options.php' );
+require_once( get_template_directory() . '/lib/functions/theme-custom-functions.php' );
 
 /* ACF
 -------------------------------------------------------------- */

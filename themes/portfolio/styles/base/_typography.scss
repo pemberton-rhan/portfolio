@@ -31,4 +31,15 @@ body {
   p {
     margin-bottom: rem-calc(15);
   }
+  a {
+    color: $color-dark;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  b,
+  strong {
+    font-weight: 600;
+  }
 }

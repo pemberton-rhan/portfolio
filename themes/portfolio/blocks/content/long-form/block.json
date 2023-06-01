@@ -1,14 +1,14 @@
 {
-  "name": "content-misc",
-  "title": "Content - Misc",
-  "description": "Misc section",
+  "name": "content-long-form",
+  "title": "Content - Long Form",
+  "description": "Long form content",
   "style": "file:./styles/block.css",
   "category": "content",
   "apiVersion": 2,
   "icon": "welcome-write-blog",
   "acf": {
     "mode": "edit",
-    "renderTemplate": "blocks/content/misc/block.php"
+    "renderTemplate": "blocks/content/long-form/block.php"
   },
   "supports": {
     "anchor": true
