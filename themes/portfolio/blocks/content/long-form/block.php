@@ -38,7 +38,7 @@
                   <a href="<?php echo $post_permalink ?>">
                     <h3><?php echo $post_title ?></h3>
                   </a>
-                  <?php echo $post_excerpt ?>
+                  <p><?php echo $post_excerpt ?></p>
                 </article>
                 
               <?php else: ?>

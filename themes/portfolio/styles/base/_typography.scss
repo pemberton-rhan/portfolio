@@ -34,6 +34,7 @@ body {
   a {
     color: $color-dark;
     text-decoration: underline;
+    display: inline-block;
     &:hover {
       text-decoration: none;
     }
@@ -41,5 +42,8 @@ body {
   b,
   strong {
     font-weight: 600;
+  }
+  em {
+    font-style: italic;
   }
 }

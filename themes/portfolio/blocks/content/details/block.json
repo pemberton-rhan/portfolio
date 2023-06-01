@@ -1,0 +1,16 @@
+{
+  "name": "content-details",
+  "title": "Content - Details",
+  "description": "Details section",
+  "style": "file:./styles/block.css",
+  "category": "content",
+  "apiVersion": 2,
+  "icon": "welcome-write-blog",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "blocks/content/details/block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

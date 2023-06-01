@@ -1,4 +1,4 @@
-/* Theme variables
+/* Base
 -------------------------------------------------------------- */
 $base-size: 16px;
 $base-line-height: 1.5;
@@ -7,8 +7,13 @@ $font-primary: system-ui, sans-serif;
 
 /* Colors
 -------------------------------------------------------------- */
-// Background colors
+// Theme colors
 $background-lite: #fcfafa;
-
-// Font colors
 $color-dark: #514f4d;
+
+// Special colors
+$color-gfm-green: #00a671;
+$color-lr-blue: #008df9;
+$color-cu-pink: #fd71af;
+$color-v-blue: #003f5f;
+$color-il-red: #e15030;
