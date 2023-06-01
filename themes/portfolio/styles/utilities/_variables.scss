@@ -1,16 +1,19 @@
-/* Theme variables
+/* Base
 -------------------------------------------------------------- */
 $base-size: 16px;
 $base-line-height: 1.5;
 $base-weight: 400;
-$primary: 'Lora', serif;
-$secondary: 'Oxygen', sans-serif;
+$font-primary: system-ui, sans-serif;
 
 /* Colors
 -------------------------------------------------------------- */
-// Background colors
-$background-lite: #edece5;
+// Theme colors
+$background-lite: #fcfafa;
+$color-dark: #514f4d;
 
-// Font colors
-$dark: #272527;
-$alt: #df836a;
+// Special colors
+$color-gfm-green: #00a671;
+$color-lr-blue: #008df9;
+$color-cu-pink: #fd71af;
+$color-v-blue: #003f5f;
+$color-il-red: #e15030;

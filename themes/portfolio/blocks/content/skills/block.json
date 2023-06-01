@@ -1,0 +1,16 @@
+{
+  "name": "content-skills",
+  "title": "Content - Skills",
+  "description": "Skills section",
+  "style": "file:./styles/block.css",
+  "category": "content",
+  "apiVersion": 2,
+  "icon": "welcome-write-blog",
+  "acf": {
+    "mode": "edit",
+    "renderTemplate": "blocks/content/skills/block.php"
+  },
+  "supports": {
+    "anchor": true
+  }
+}

@@ -1,0 +1,43 @@
+// Import needed sass modules
+@use '../../../../styles/utilities/variables' as *;
+@use '../../../../styles/utilities/functions' as *;
+
+#content-long-form {
+  .content-inner {
+    display: flex;
+    border-bottom: rem-calc(1) solid $color-dark;
+    padding-bottom: rem-calc(120);
+  }
+  aside {
+    flex-basis: 21%;
+    padding-top: rem-calc(50);
+  }
+  main {
+    flex: 1;
+  }
+  .long-form-section {
+    padding: rem-calc(50) rem-calc(50) rem-calc(50) 0;
+    border-bottom: rem-calc(1) solid $color-dark;
+    display: flex;
+    &:last-child {
+      border: none;
+    }
+  }
+  .section-title {
+    flex-basis: 27%;
+    margin-bottom: 0;
+  }
+  .articles {
+    flex: 1;
+    article {
+      max-width: rem-calc(650);
+      margin-bottom: rem-calc(35);
+      *:last-child {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Import variables
+@use 'utilities/variables' as *;
+@use 'utilities/functions' as *;
+
+/* Colors
+-------------------------------------------------------------- */
+.gfm-green {
+  color: $color-gfm-green;
+}
+.lr-blue {
+  color: $color-lr-blue;
+}
+.cu-pink {
+  color: $color-cu-pink;
+}
+.v-blue {
+  color: $color-v-blue;
+}
+.il-red {
+  color: $color-il-red;
+}

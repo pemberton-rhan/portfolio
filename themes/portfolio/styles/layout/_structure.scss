@@ -2,10 +2,21 @@
 @use 'utilities/variables' as *;
 @use 'utilities/functions' as *;
 
+/* Box size border box
+-------------------------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* Styles
 -------------------------------------------------------------- */
 .container-outer {
-  max-width: rem-calc(2700);
+  max-width: rem-calc(1750);
   padding: 0 rem-calc(100);
   margin: 0 auto;
 }
