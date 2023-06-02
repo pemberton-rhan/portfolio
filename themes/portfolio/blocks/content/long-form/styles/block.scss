@@ -6,17 +6,17 @@
   .content-inner {
     display: flex;
     border-bottom: rem-calc(1) solid $color-dark;
-    padding-bottom: rem-calc(120);
+    padding-bottom: $spacing-8;
   }
   aside {
     flex-basis: 21%;
-    padding-top: rem-calc(50);
+    padding-top: $spacing-3;
   }
   main {
     flex: 1;
   }
   .long-form-section {
-    padding: rem-calc(50) rem-calc(50) rem-calc(50) 0;
+    padding: $spacing-3 $spacing-3 $spacing-3 0;
     border-bottom: rem-calc(1) solid $color-dark;
     display: flex;
     &:last-child {
@@ -30,8 +30,7 @@
   .articles {
     flex: 1;
     article {
-      max-width: rem-calc(650);
-      margin-bottom: rem-calc(35);
+      margin-bottom: $spacing-2;
       *:last-child {
         margin-bottom: 0;
       }
