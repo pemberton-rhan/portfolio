@@ -1,0 +1,16 @@
+// Import needed sass modules
+@use './variables' as *;
+@use './functions' as *;
+
+/* Typography
+-------------------------------------------------------------- */
+// Body text small
+@mixin body-text-sm {
+  font-size: rem-calc(16);
+  line-height: rem-calc(24);
+}
+// Body text medium
+@mixin body-text-md {
+  font-size: rem-calc(20);
+  line-height: rem-calc(30);
+}
