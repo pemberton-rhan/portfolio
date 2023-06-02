@@ -1,24 +1,9 @@
 // Import variables
-@use 'utilities/functions' as *;
 @use 'utilities/variables' as *;
-
-/* Structure
--------------------------------------------------------------- */
-// Max width container
-.container-outer {
-  max-width: $max-width-lg;
-  padding: 0 $spacing-6;
-  margin: 0 auto;
-}
-
-// Text containers
-.txt-container-small {
-  max-width: $max-width-sm;
-}
+@use 'utilities/functions' as *;
 
 /* Colors
 -------------------------------------------------------------- */
-// Special colors
 .gfm-green {
   color: $color-gfm-green;
 }

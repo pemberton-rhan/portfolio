@@ -1,22 +1,22 @@
 // Import needed sass modules
-@use '../../../../styles/utilities/functions' as *;
 @use '../../../../styles/utilities/variables' as *;
+@use '../../../../styles/utilities/functions' as *;
 
 #content-skills {
   .content-inner {
     display: flex;
     border-bottom: rem-calc(1) solid $color-dark;
-    padding-bottom: $spacing-8;
+    padding-bottom: rem-calc(120);
   }
   aside {
     flex-basis: 21%;
-    padding-top: $spacing-3;
+    padding-top: rem-calc(50);
   }
   main {
     flex: 1;
   }
   .skills-section {
-    padding: $spacing-3 $spacing-3 $spacing-3 0;
+    padding: rem-calc(50) rem-calc(50) rem-calc(50) 0;
     border-bottom: rem-calc(1) solid $color-dark;
     display: flex;
     &:last-child {
@@ -33,9 +33,8 @@
       list-style-type: none;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       li {
-        flex-basis: calc(33.333% - calc($spacing / 2));
+        flex-basis: calc(33.333% - rem-calc(8));
       }
     }
   }

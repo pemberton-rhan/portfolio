@@ -18,7 +18,7 @@
           <h3 class="section-title">
             <?php the_sub_field('title'); ?>
           </h3>
-          <div class="section-text txt-container-small">
+          <div class="section-text">
             <?php the_sub_field('text'); ?>
           </div>
         </section>

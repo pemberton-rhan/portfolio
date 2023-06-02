@@ -18,20 +18,9 @@
           <h3 class="section-title">
             <?php the_sub_field('title'); ?>
           </h3>
-          
-          <?php if( !get_sub_field('gravity_form') ): ?>
-            <div class="section-text txt-container-small">
-              <?php the_sub_field('text'); ?>
-            </div>
-          <?php else: ?>
-            <div id="g-form" class="section-form">
-              <?php 
-                $form_id = get_sub_field('gravity_form');
-                gravity_form( $form_id, false, false, false, '', false ); 
-              ?>
-            </div>
-          <?php endif; ?>
-          
+          <div class="section-text">
+            <?php the_sub_field('text'); ?>
+          </div>
         </section>
         
         <?php endwhile; ?>
