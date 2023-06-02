@@ -1,22 +1,23 @@
 // Import needed sass modules
-@use '../../../../styles/utilities/variables' as *;
 @use '../../../../styles/utilities/functions' as *;
+@use '../../../../styles/utilities/variables' as *;
+@use '../../../../styles/utilities/mixins' as *;
 
 #content-details {
   .content-inner {
     display: flex;
     border-bottom: rem-calc(1) solid $color-dark;
-    padding-bottom: rem-calc(120);
+    padding-bottom: $spacing-8;
   }
   aside {
     flex-basis: 21%;
-    padding-top: rem-calc(50);
+    padding-top: $spacing-3;
   }
   main {
     flex: 1;
   }
   .details-section {
-    padding: rem-calc(50) rem-calc(50) rem-calc(50) 0;
+    padding: $spacing-3 $spacing-3 $spacing-3 0;
     border-bottom: rem-calc(1) solid $color-dark;
     display: flex;
     &:last-child {
@@ -28,11 +29,14 @@
     margin-bottom: 0;
   }
   .section-text {
-    max-width: rem-calc(650);
+    flex: 1;
     p {
-      font-size: rem-calc(20);
-      line-height: rem-calc(30);
+      @include body-text-md;
     }
+  }
+  .section-form {
+    max-width: $max-width-sm;
+    flex: 1;
   }
   h3 {
     margin-bottom: 0;

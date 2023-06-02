@@ -34,7 +34,7 @@
                   $post_permalink = get_the_permalink($selected_post);
                 ?>
                 
-                <article class="internal-article">
+                <article class="internal-article txt-container-small">
                   <a href="<?php echo $post_permalink ?>">
                     <h3><?php echo $post_title ?></h3>
                   </a>
@@ -43,7 +43,7 @@
                 
               <?php else: ?>
                 
-                <article class="external-article">
+                <article class="external-article txt-container-small">
                   <?php the_sub_field('external_article')?>
                 </article>
                 
