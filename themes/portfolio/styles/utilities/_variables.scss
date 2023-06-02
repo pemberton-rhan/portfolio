@@ -1,3 +1,6 @@
+// Import needed sass modules
+@use './functions' as *;
+
 /* Base
 -------------------------------------------------------------- */
 $base-size: 16px;
@@ -17,3 +20,21 @@ $color-lr-blue: #008df9;
 $color-cu-pink: #fd71af;
 $color-v-blue: #003f5f;
 $color-il-red: #e15030;
+
+/* Widths & spacing
+-------------------------------------------------------------- */
+// Widths
+$max-width-lg: rem-calc(1750);
+$max-width-sm: rem-calc(650);
+
+// Spacing
+$spacing: rem-calc(16);
+$spacing-2: calc($spacing * 2); // 32px
+$spacing-3: calc($spacing * 3); // 48px
+$spacing-4: calc($spacing * 4); // 64px
+$spacing-5: calc($spacing * 5); // 80px
+$spacing-6: calc($spacing * 6); // 96px
+$spacing-7: calc($spacing * 7); // 112px
+$spacing-8: calc($spacing * 8); // 128px
+$spacing-9: calc($spacing * 9); // 144px
+$spacing-10: calc($spacing * 10); // 160px

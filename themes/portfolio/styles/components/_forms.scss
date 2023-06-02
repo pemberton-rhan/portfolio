@@ -1,0 +1,46 @@
+// Import variables
+@use '../utilities/functions' as *;
+@use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+/* Global gravity forms styles
+-------------------------------------------------------------- */
+#g-form {
+  .gform_wrapper {
+    .gform_fields {
+      column-gap: $spacing;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: $color-dark !important;
+    }
+    input,
+    textarea {
+      border: none;
+      border-bottom: rem-calc(1) solid $color-dark;
+      background-color: transparent;
+      padding: $spacing;
+      font-family: $font-primary;
+      color: $color-dark;
+      @include body-text-md();
+    }
+    textarea {
+      height: rem-calc(200);
+      resize: none;
+    }
+    .gform_footer {
+      justify-content: flex-end;
+      .gform_button {
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+        text-decoration: underline;
+        cursor: pointer;
+        color: $color-dark;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
